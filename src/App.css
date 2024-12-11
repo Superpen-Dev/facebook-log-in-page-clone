@@ -1,0 +1,156 @@
+body {
+  margin: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: #f0f2f5;
+  color: #1c1e21;
+}
+
+.facebook-clone {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.container {
+  display: flex;
+  max-width: 1000px;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* Left Section */
+.left {
+  flex: 1 1 300px;
+  padding: 20px;
+}
+
+.facebook-logo {
+  font-size: 60px;
+  color: #1877f2;
+  margin-bottom: 10px;
+}
+
+.facebook-tagline {
+  font-size: 24px;
+  color: #606770;
+  line-height: 1.5;
+}
+
+/* Right Section */
+.right {
+  flex: 1 1 400px;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login-form input {
+  width: 95%;
+  padding: 12px;
+  margin-bottom: 12px;
+  border: 1px solid #dddfe2;
+  border-radius: 6px;
+  font-size: 16px;
+  background-color: white;
+}
+
+.login-button {
+  width: 100%;
+  background-color: #1877f2;
+  color: white;
+  font-size: 18px;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.login-button:hover {
+  background-color: #145dbf;
+}
+
+.forgot-password {
+  color: #1877f2;
+  font-size: 14px;
+  text-decoration: none;
+  margin: 10px 0;
+}
+
+.forgot-password:hover {
+  text-decoration: underline;
+}
+
+hr {
+  width: 100%;
+  margin: 20px 0;
+  border: none;
+  border-top: 1px solid #dddfe2;
+}
+
+.create-account-button {
+  width: 100%;
+  background-color: #42b72a;
+  color: white;
+  font-size: 16px;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.create-account-button:hover {
+  background-color: #36a420;
+}
+
+/* Footer Link */
+.create-page {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.create-page a {
+  color: #1877f2;
+  text-decoration: none;
+}
+
+.create-page a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .left {
+    text-align: center;
+  }
+
+  .facebook-logo {
+    font-size: 48px;
+  }
+
+  .facebook-tagline {
+    font-size: 18px;
+  }
+
+  .right {
+    width: 100%;
+    max-width: 400px;
+  }
+}
